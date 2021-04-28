@@ -88,7 +88,7 @@ def jokes():
    return pyjokes.get_joke()
 
 def wolframalpha(text):
-   app_id = "L6YYUT-QWJLQ3KA48"
+   app_id = "<<YOUR API ID>>"
    client = wolframalpha.Client(app_id)
    res = client.query(text)
    return next(res.results).text
